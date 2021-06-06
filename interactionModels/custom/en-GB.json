@@ -1,0 +1,170 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "belfast bike buddy",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "what can you do",
+            "how do i work this",
+            "i do not know how to use this",
+            "please help me",
+            "i need help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "quit"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "BikeParkingIntent",
+          "slots": [
+            {
+              "name": "streetName",
+              "type": "AMAZON.StreetName",
+              "samples": [
+                "I would like to park my bicycle on {streetName}",
+                "I would like to park my bike on {streetName}",
+                "{streetName}"
+              ]
+            }
+          ],
+          "samples": [
+            "Where can I park my bike in Belfast",
+            "Where can I park my bicycle",
+            "I want to park my bike",
+            "where can I park my bike near {streetName}",
+            "where can I park my bicycle near {streetName}"
+          ]
+        },
+        {
+          "name": "BelfastBikeLocationIntent",
+          "slots": [
+            {
+              "name": "bikeStreetName",
+              "type": "AMAZON.StreetName",
+              "samples": [
+                "The station near {bikeStreetName}",
+                "I would like to rent a bike close to {bikeStreetName}",
+                "I would like to rent a bike near {bikeStreetName}",
+                "Near {bikeStreetName}",
+                "{bikeStreetName}"
+              ]
+            }
+          ],
+          "samples": [
+            "where can i dock my bike near {bikeStreetName}",
+            "where can i drop off my bike near {bikeStreetName}",
+            "where can i drop off my bike",
+            "where can i pick up a belfast bike near {bikeStreetName}",
+            "where can i pick up a belfast bike",
+            "where can i leave my bike near {bikeStreetName}",
+            "where can i leave my belfast bike",
+            "where can i rent a belfast bike",
+            "where is the nearest belfast bike rental point",
+            "where can i leave my bike",
+            "where can i rent a bicycle",
+            "where can i rent a bicycle near {bikeStreetName}",
+            "where can i rent a bike near {bikeStreetName}",
+            "where can i rent a bike",
+            "where can i rent a bike in belfast"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "BikeParkingIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "streetName",
+              "type": "AMAZON.StreetName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.24484541663.672320870122"
+              }
+            }
+          ]
+        },
+        {
+          "name": "BelfastBikeLocationIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "bikeStreetName",
+              "type": "AMAZON.StreetName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1499793765103.590182005601"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.24484541663.672320870122",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "On what street would you like to park your bike?"
+          },
+          {
+            "type": "PlainText",
+            "value": "On what street would you like to park your bicycle?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1499793765103.590182005601",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Near what street would you like to search for a Belfast bike station?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "15"
+}
