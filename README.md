@@ -3,7 +3,7 @@ Alexa skill to show the locations of your nearest bike parking and Belfast Bike 
 Get the location of Belfast Bike docks and bicycle parking locations e.g. "Alexa, ask Belfast Bike Buddy where can i rent a bike near Castle Street?"
 
 This app was written as an entry to the Allstate Data Hack for Good 2021 by Team Caffeine
-![AllStateHack](/images/logo.png)
+![AllStateHack](/images/logo.jpg)
 
 ## Usage
 Example commands for Belfast Bikes:
