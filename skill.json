@@ -5,9 +5,9 @@
         "en-GB": {
           "summary": "Get the location of Belfast Bike docks and bicycle parking locations e.g. \"Alexa, ask Belfast Bike Buddy where can i rent a bike near Castle Street?\"",
           "examplePhrases": [
-            "where can I park my bike near Bridge Street?",
-            "where can I park my bicycle near Castle Lane?",
-            "launch Belfast Bike Buddy"
+            "Alexa, Launch Belfast Bike Buddy",
+            "Alexa, ask Belfast Bike Buddy where can I park my bicycle near Castle Lane?",
+            "Alexa ask Belfast Bike Buddy where can I rent a bike near Donegall Pass?"
           ],
           "keywords": [
             "Belfast",
@@ -33,7 +33,7 @@
         "isActive": true
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Echo dot: say \"ask Belfast Bike Buddy where can I rent a bike near Donegall Pass\"\nUsername and password available on request (sensitive info not trusted here)\nPermissions not required. No use of trademarks or IP. Open data used only.\nContact info: Michael Jennings - mjennings061@gmail.com (+44 7889 016684)",
+      "testingInstructions": "Echo dot: say \"Alexa, ask Belfast Bike Buddy where can I rent a bike near Donegall Pass\"\nUsername and password available on request (sensitive info not trusted here)\nPermissions not required. No use of trademarks or IP. Open data used only.\nContact info: Michael Jennings - mjennings061@gmail.com (+44 7889 016684)",
       "category": "NAVIGATION_AND_TRIP_PLANNER",
       "distributionMode": "PUBLIC",
       "distributionCountries": []
