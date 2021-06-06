@@ -4,7 +4,6 @@ Get the location of Belfast Bike docks and bicycle parking locations e.g. "Alexa
 
 This app was written as an entry to the Allstate Data Hack for Good 2021 by Team Caffeine
 ![AllStateHack](/images/logo.png)
-Format: ![Alt Text](url)
 
 ## Usage
 Example commands for Belfast Bikes:
