@@ -17,6 +17,9 @@ Example commands for bike parking locations in Belfast:
 - "Alexa, ask Belfast Bike Buddy where can I park my bike?"
 - "Alexa, ask Belfast Bike Buddy where can I park my bicycle near Lisburn Road"
 
+## Try It Yourself!
+Head to the Amazon [developer environment for Alexa](https://developer.amazon.com/alexa/console) and try the getting started guide
+
 ## Authors
 Joel McIlroy
 Michael Jennings
